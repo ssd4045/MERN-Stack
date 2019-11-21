@@ -1,0 +1,16 @@
+// .babelrc es un archivo oculto, por eso empieza con .
+//con este archivo le decimos a babel que sintaxis es encargado de traducir
+//le decimos q los presets (lo q tiene q traducir) es: env y react
+{
+  "presets": ["@babel/preset-env", "@babel/preset-react"]
+}
+
+//vamos a instalar @babel/core y babel-loader,
+//q van a hacer de traductor de jsx para webpack
+//(xq webpack x si solo no lo entiende)
+//jsx es una sintaxis como la q usamos en el componente App, tipica de react
+//que es como una mezcla entre js y html
+//babel tmb otros tipos de sintaxis, hay q especificarle q queremos q traduzca
+//por lo q necesitamos tmb @babel/preset-react: para q traduzca react
+//y @babel/preset-env: para que traduzca js moderno
+//todo seguido de -D para q lo instale como dependencia de desarrollo
